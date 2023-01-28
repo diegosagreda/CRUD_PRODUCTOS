@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Gestion Productos</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Productos</h1>
+        <div class="acciones">
+            <button id="nuevo">Nuevo Producto</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Presentacion</th>
+                    <th>Unidades Disponibles</th>
+                    <th>Fecha Vencimiento</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+                
+            </tbody>
+          
+        </table>
+    </div>
+
+    <div class="modal-close" id="modal">
+        <div class="formulario-modal">
+            <h1>Nuevo producto</h1>
+            <div class="formulario">
+                <input id="codigo" type="text" placeholder="Codigo">
+                <input id="nombre" type="text" placeholder="Nombre">
+                <input id="presentacion" type="text" placeholder="Presentacion">
+                <input id="unidades" type="number" placeholder="Unidades disponibles">
+                <input id="fecha" type="date" placeholder="Fecha Vencimiento">
+            </div>
+            <div class="acciones-modal">
+                <button id="registrar">Registrar</button>
+                <button id="cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

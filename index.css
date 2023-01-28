@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+table{
+background-color: white;
+text-align: left;
+border-collapse: collapse;
+width: 100%;
+  overflow: auto;
+}
+
+th, td{
+padding: 20px;
+}
+
+thead{
+background-color: #246355;
+border-bottom: solid 5px #0F362D;
+color: white;
+}
+
+tr:nth-child(even){
+background-color: #ddd;
+}
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal-close{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+}
+.formulario-modal{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+
+}
+#registrar{
+  background-color: green;
+  border: none;
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+#nuevo{
+  background-color: orange;
+  border: none;
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+#registrar:hover,#cancelar:hover,#nuevo:hover{
+  transform: scale(1.05);
+}
+#cancelar{
+  background-color: orange;
+  border: none;
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+.acciones-modal{
+  display: flex;
+  justify-content: space-around;
+
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
