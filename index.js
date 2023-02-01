@@ -1,9 +1,9 @@
 import {
- getProductos,
- registrarProducto,
- eliminarProducto,
- updateProducto,
- getProductoById
+    getProductos,
+    registrarProducto,
+    eliminarProducto,
+    updateProducto,
+    getProductoById
 } from "./firebase.js";
 
 let productos = []
@@ -23,9 +23,8 @@ const eliminiProducto = (id) =>{
     eliminarProducto(id)
     tabla.innerHTML = ''
     cargarProductosEnTabla()
-   
-}
 
+}
 
 const venderProduto = async(id) => {
     const producto = (await getProductoById(id)).data();
@@ -41,8 +40,8 @@ const venderProduto = async(id) => {
         alert('La cantidad a comprar supera el numero de unidades existentes')
     }
 }
+/**Obtenemos Productos*/
 const getProducto = (id,cod,nom,pre,uni,fec,) => {
-
     const item = document.createElement('tr');
     const codigo = document.createElement('td');codigo.innerText = cod
     const nombre = document.createElement('td');nombre.innerText = nom
@@ -63,7 +62,6 @@ const getProducto = (id,cod,nom,pre,uni,fec,) => {
     btn_vender.style.fontWeight = 'bold';
     btn_vender.style.marginLeft = '10px';
 
-   
     item.appendChild(codigo);
     item.appendChild(nombre);
     item.appendChild(presentacion);
@@ -71,13 +69,10 @@ const getProducto = (id,cod,nom,pre,uni,fec,) => {
     item.appendChild(fecha)
     item.appendChild(btn);
     item.appendChild(btn_vender)
-  
-    
+
     return item 
-   
 }
-
-
+/**Cargamos productos en la tabla*/
 const cargarProductosEnTabla =async () =>{
     productos = await getProductos()   
     productos.forEach(producto => {
@@ -104,12 +99,12 @@ btn_registrar.addEventListener('click', async()=>{
     const presentacion = document.getElementById('presentacion').value;
     const unidades = document.getElementById('unidades').value;
     const fecha = document.getElementById('fecha').value;
- 
+
     await registrarProducto(codigo,nombre,presentacion,unidades,fecha)
     tabla.innerHTML = ''
     cargarProductosEnTabla()
     alert('Producto registro')
-     
+
 });
 
 setTimeout(() => {
