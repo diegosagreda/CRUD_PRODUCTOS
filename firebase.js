@@ -18,13 +18,12 @@ import {ref, onValue} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-da
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAozsACcUEyO632McLjTIO_7grlH0K8Igg",
-  authDomain: "crud-productos-5c6ac.firebaseapp.com",
-  databaseURL: "https://crud-productos-5c6ac-default-rtdb.firebaseio.com",
-  projectId: "crud-productos-5c6ac",
-  storageBucket: "crud-productos-5c6ac.appspot.com",
-  messagingSenderId: "738168061274",
-  appId: "1:738168061274:web:f602f119e4a028931f0763"
+  apiKey: "AIzaSyBDFVdN96t6hwtbT4VqAOVpH6pznp_Kz20",
+  authDomain: "registro-app-16a81.firebaseapp.com",
+  projectId: "registro-app-16a81",
+  storageBucket: "registro-app-16a81.appspot.com",
+  messagingSenderId: "185388144159",
+  appId: "1:185388144159:web:190063eb0e283da10f672a"
 };
 
 // Initialize Firebase
